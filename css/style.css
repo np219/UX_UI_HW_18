@@ -1,0 +1,254 @@
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+.flex {
+  display: flex;
+}
+.navigation,
+.work,
+.latest-work {
+  width: 70%;
+}
+
+.navigation,
+.work {
+  margin: 0 auto;
+}
+
+.navigation {
+  align-items: center;
+}
+
+nav {
+  padding: 1%;
+}
+ul {
+  display: flex;
+  padding-left: 20px;
+}
+.header-links {
+  list-style: none;
+}
+#header-nav a {
+  text-decoration: none;
+  margin: 0px 15px;
+  display: inline-block;
+  color: #c88e47;
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px black;
+}
+.intro {
+  background-color: #3b5635;
+  min-height: calc(100% - 98px);
+  align-items: center;
+  justify-content: center;
+}
+.introText {
+  font-size: 40px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  width: 65%;
+  margin: 0 auto;
+  text-align: center;
+}
+.introduction {
+  font-weight: normal;
+}
+
+#scrolltowork a {
+  padding-top: 60px;
+}
+.scroll a {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  transform: translate(0, -50%);
+  color: #c88e47;
+  text-decoration: none;
+  text-align: center;
+  transition: opacity 0.3s;
+}
+a #scrollarrow {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #c88e47;
+  border-bottom: 1px solid #c88e47;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+.latest-work {
+  font-size: 24px;
+  color: #364e31;
+  font-family: "Times New Roman", Times, serif;
+  margin: 70px auto 45px;
+  text-align: center;
+}
+h2 {
+  font-size: 22px;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+button {
+  color: white;
+  background-color: #364e31;
+  padding: 12px;
+  border-radius: 10px;
+  border: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.work {
+  margin: 0 auto 25px;
+  padding: 1rem 2rem;
+  position: relative;
+  height: 400px;
+}
+
+.image-and-text,
+.image-and-text2,
+.container-text-right,
+.container-text-left,
+.img-container {
+  position: relative;
+}
+
+.image-and-text {
+  left: 125px;
+}
+.image-and-text2 {
+  right: 125px;
+}
+
+.container-text-right,
+.container-text-left {
+  background: #ffb893;
+  padding: 1rem;
+  width: 366px;
+  -webkit-box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 7px 10px 29px -10px rgba(0, 0, 0, 0.75);
+  z-index: 1;
+}
+
+.container-text-right {
+  float: right;
+  right: 250px;
+  top: 68.75px;
+  border-radius: 10px;
+}
+.container-text-left {
+  float: left;
+  left: 250px;
+  top: 68.75px;
+  border-radius: 10px;
+}
+
+.img-container {
+  width: 684px;
+  background-color: #c88e47;
+  text-align: center;
+  float: right;
+}
+.imgCenter {
+  padding: 15px;
+}
+.flex-column {
+  flex-direction: column;
+}
+.socials {
+  justify-content: center;
+  align-items: center;
+}
+.fa {
+  color: #c88e47;
+  margin: 0px 10px;
+}
+.round {
+  padding: 12px;
+  border-radius: 50%;
+  border: 2px solid #364e31;
+}
+.align-center {
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .introText {
+    font-size: 24px;
+    text-align: left;
+    width: 70%;
+  }
+  .latest-work {
+    margin: 30px auto 30px;
+  }
+  .work {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin: 0;
+  }
+  .image-and-text {
+    left: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .image-and-text2 {
+    right: 0;
+  }
+  .responsive,
+  .container-text-right,
+  .container-text-left {
+    width: auto;
+  }
+
+  .container-text-right {
+    float: none;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .container-text-left {
+    float: none;
+    left: 0;
+    top: 0;
+    border-radius: 0;
+  }
+  .container-text-right,
+  .container-text-left {
+    box-shadow: none;
+  }
+  .img-container {
+    float: none;
+    position: unset;
+    width: 100%;
+  }
+  .imgCenter {
+    width: 382px;
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+  #scrolltowork {
+    display: none;
+  }
+}
