@@ -200,8 +200,11 @@ button {
   #header-nav a {
     display: none;
   }
+  .intro {
+    min-height: calc(100% - 125px);
+  }
   .introText {
-    font-size: 26px;
+    font-size: 20px;
     text-align: left;
     width: 70%;
   }
