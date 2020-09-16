@@ -187,9 +187,6 @@ button {
 .align-center {
   align-items: center;
 }
-.w3 {
-  z-index: 2;
-}
 @media only screen and (max-width: 600px) {
   .navigation {
     margin: 0 50px;
@@ -198,7 +195,7 @@ button {
     display: block;
     position: absolute;
     top: 0.5em;
-    right: 0;
+    right: 1em;
   }
   #header-nav a {
     display: none;
